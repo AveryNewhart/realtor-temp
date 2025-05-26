@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>
@@ -7,10 +8,10 @@
       <div class="logo">Yonna <span>Realty</span></div>
       <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#properties">Properties</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><RouterLink to="/">Home</RouterLink></li>
+          <li><RouterLink to="/properties">Properties</RouterLink></li>
+          <li><RouterLink to="/#about">About</RouterLink></li>
+          <li><RouterLink to="/#contact">Contact</RouterLink></li>
         </ul>
       </nav>
     </div>
